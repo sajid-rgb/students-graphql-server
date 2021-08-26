@@ -26,7 +26,7 @@ const startServer = async () => {
     })
     await apolloServer.start();
     apolloServer.applyMiddleware({ app: app })
-    app.listen(port, () => {
+    app.listen(process.env.PORT || port, () => {
         console.log(`connected on port ${port}`)
     })
 
