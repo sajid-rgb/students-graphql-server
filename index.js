@@ -15,10 +15,6 @@ mongoose.connect(URL, {
     useNewUrlParser: true, useUnifiedTopology: true,
 }, () => console.log("Db Connected"))
 
-
-
-
-
 const startServer = async () => {
     const apolloServer = new ApolloServer({
         typeDefs,
